@@ -1,3 +1,13 @@
+## Inspect DICOM attributes against the standard
+
+This is a development fork of [dicom-validator](https://github.com/pydicom/dicom-validator), a Python command-line tool that compares dataset attributes with requirements derived from the DICOM standard. Upstream's `validate_iods` helps developers inspect missing or unexpected attributes for a dataset's SOP class; the README below explains the tool's beta status and validation limits.
+
+**Merged contribution:** [PR #301](https://github.com/pydicom/dicom-validator/pull/301) escapes filenames before inserting them into HTML validation-report headings. This is a focused report-rendering improvement, separate from the validator's standards-interpretation logic.
+
+Start with the [official documentation](https://dicom-validator.readthedocs.io/) and the installation and usage examples below. Select the DICOM edition appropriate to the dataset you are checking. The [branch comparison](https://github.com/pydicom/dicom-validator/compare/main...jdotc1:main) shows this fork's default branch alongside upstream.
+
+---
+
 # dicom-validator
 
 [![PyPI version](https://badge.fury.io/py/dicom-validator.svg)](https://pypi.org/project/dicom-validator) [![Test Suite](https://github.com/pydicom/dicom-validator/workflows/Testsuite/badge.svg)](https://github.com/pydicom/dicom-validator/actions) [![Python version](https://img.shields.io/pypi/pyversions/dicom-validator.svg)](https://pypi.org/project/dicom-validator)
